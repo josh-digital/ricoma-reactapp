@@ -1,0 +1,159 @@
+.main-container {
+  display: flex;
+  /* position: fixed;
+    top: 49px;
+    width: 100%; */
+  background-color: white;
+  /* animation: nav-bar-animate 200ms; */
+}
+
+@keyframes nav-bar-animate {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.outer-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-grow: 2;
+  margin: 0.5rem 0;
+}
+
+.hamburger-menu {
+  display: none;
+  /* flex-grow: 1;
+    align-self: center;
+    padding-left: 2rem; */
+}
+
+ul {
+  padding: 0;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+li a {
+  text-decoration: none;
+  color: #000000;
+  padding: 0.5rem;
+  /* padding: 1rem; */
+  /* margin-left: -3rem; */
+}
+
+.logo {
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: 41px;
+  align-self: center;
+  flex-grow: 1;
+  text-align: center;
+}
+
+div a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.outer-container li:first-child {
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: 3rem;
+}
+
+ul li {
+  text-decoration: none;
+  color: #000000;
+
+  font-size: 1rem;
+  font-weight: bold;
+  letter-spacing: 3px;
+  line-height: 2rem;
+  text-align: center;
+}
+
+li a:hover {
+  border-bottom: 2px solid #1f3162;
+}
+
+.cart-icon {
+  height: 30px;
+  width: 37px;
+}
+
+.cart-style {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  justify-content: center;
+  position: relative;
+}
+
+.open-tri {
+  height: 0;
+  width: 0;
+  border-top: 6px solid #a0a2a6;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  margin-left: 10px;
+}
+
+.logo-small {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .outer-container {
+    display: none;
+    /* display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      flex-direction: column; */
+  }
+
+  .logo {
+    justify-content: center;
+  }
+
+  .logo-small {
+    display: block;
+  }
+
+  .hamburger-menu {
+    display: block;
+    flex-grow: 1;
+    align-self: center;
+    padding-left: 2rem;
+  }
+}
+
+.cart-quantity {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  background-color: #d74179;
+  min-width: 1.7rem;
+  color: white;
+  min-height: 1.7rem;
+  max-width: 2.7rem;
+  max-height: 2.7rem;
+  padding: 1px;
+  border-radius: 50%;
+  left: 50%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-break: break-all;
+}

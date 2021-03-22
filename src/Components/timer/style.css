@@ -1,0 +1,61 @@
+.timer-main-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.timer-container {
+  background-color: #1f3162;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 0;
+  position: relative;
+}
+
+.timer-outer-container {
+  display: flex;
+}
+
+.timer-time {
+  color: #ffffff;
+  font-size: 0.9rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  /* line-height: 31px; */
+  text-align: center;
+}
+
+.timer-days {
+  color: rgba(255, 255, 255, 0.72);
+
+  font-size: 0.9rem;
+  letter-spacing: 0;
+  /* line-height: 21px; */
+  text-align: center;
+}
+.time-notation {
+  padding: 0 20px;
+}
+
+.timer-heading {
+  font-size: 1rem;
+}
+
+.close-icon {
+  padding: 10px;
+  position: absolute;
+  display: flex;
+  right: 2rem;
+  cursor: pointer;
+}
+
+.close-icon:hover {
+  background-color: black;
+  border-radius: 50%;
+}
+
+@media (max-width: 800px) {
+  .timer-container {
+    flex-direction: column;
+  }
+}

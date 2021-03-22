@@ -1,0 +1,51 @@
+.box-conatiner {
+  display: flex;
+  padding: 1.5rem 0;
+}
+
+.box {
+  height: 2rem;
+  width: 2rem;
+  border-radius: 5px;
+  margin: 2rem 0;
+  margin-right: 1rem;
+  position: relative;
+  cursor: pointer;
+}
+
+.purple {
+  background-color: #81396f;
+}
+
+.blue {
+  background-color: #143061;
+}
+
+.pink {
+  background-color: #f6437d;
+}
+
+.tick-mark {
+  position: absolute;
+  /* top: 50%; */
+  /* left: 50%; */
+  /* right: 44%; */
+  /* bottom: 0; */
+  color: white;
+  /* left: 50%; */
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  height: 100%;
+  align-items: center;
+}
+
+.tick-mark-icon {
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+
+.tick-mark-icon-small {
+  font-size: 1.2rem;
+  font-weight: bolder;
+}

@@ -1,0 +1,144 @@
+.img-container {
+  width: 100%;
+  /* margin-top: 100px; */
+}
+
+.bg-img {
+  background-image: url(../../Assets/Group.png);
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-bottom: 2rem;
+}
+
+.main-text {
+  color: #ffffff;
+  font-size: 4.5rem;
+  font-weight: 600;
+  letter-spacing: 0;
+  padding-bottom: 2rem;
+  line-height: 5rem;
+  /* animation: fadeInAnimation 300ms ease-in; */
+}
+
+.sub-text {
+  color: #ffffff;
+  font-family: "Open Sans";
+  font-size: 1rem;
+  letter-spacing: 0;
+  padding-bottom: 2rem;
+  line-height: 2rem;
+}
+
+.section-content {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  padding-left: 5rem;
+  width: 40%;
+}
+
+.man-standing-img-container {
+  display: flex;
+  width: 100%;
+  height: auto;
+}
+
+.man-standing-img {
+  /* height: 359px;
+  width: 324px; */
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 98%;
+  width: 45%;
+  object-fit: cover;
+  object-position: 100% 10%;
+  margin-top: 5rem;
+  margin-right: 4rem;
+  border-radius: 2rem;
+  /* transition: transform; */
+  /* animation-iteration-count: 1;
+  animation-fill-mode: forwards; */
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    /* opacity: 0; */
+    transform: translate(-100%);
+  }
+  100% {
+    /* opacity: 1; */
+    transform: translateY(0);
+  }
+}
+
+.btn {
+  padding: 1em 3em;
+  border-radius: 24px;
+  background-color: #000000;
+  width: 20vw;
+  color: white;
+  font-size: 1rem;
+}
+
+@media (max-width: 1250px) {
+  .man-standing-img {
+    /* height: 359px;
+    width: 324px; */
+    height: 100%;
+    width: 45%;
+    object-fit: cover;
+    object-position: 100% 10%;
+    /* margin-top: 100px;
+    margin-right: 50px; */
+    border-radius: 50px;
+  }
+
+  .sub-text {
+    padding-bottom: 1rem;
+    line-height: 1rem;
+  }
+
+  .main-text {
+    font-size: 3rem;
+    font-weight: 600;
+    padding-bottom: 1rem;
+    line-height: 4rem;
+    /* line-height: 89px; */
+  }
+}
+
+@media (max-width: 500px) {
+  /* .sub-text {
+    padding-bottom: 1em;
+  } */
+  .man-standing-img {
+    /* height: 359px;
+    width: 324px; */
+    height: 50%;
+    width: 40%;
+    /* margin-top: 0; */
+    /* margin-right: 0; */
+    align-self: center;
+  }
+}
+
+@media (max-width: 800px) and (min-width: 500px) {
+  .main-text {
+    font-size: 2rem;
+    line-height: 3rem;
+    /* line-height: 89px; */
+  }
+
+  .man-standing-img {
+    /* height: 359px;
+    width: 324px; */
+    height: 100%;
+    width: 40%;
+    /* margin-top: 0;
+    margin-right: 0; */
+    align-self: center;
+  }
+}
